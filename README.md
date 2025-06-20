@@ -1,58 +1,71 @@
-# obscure-reference-llm-vsx
+# obscure-reference-llm README
 
-A Visual Studio Code LLM tool. Written with the aid of LLMs, of course.
+This is the README for your extension "obscure-reference-llm". After writing up a brief description, we recommend including the following sections.
 
-This extension allows you to:
+## Features
 
-- **Uninstall** command (via command palette or Status Bar).
-- **Configuration** page under Settings.
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-- Configure LLM endpoints via Settings (gear icon) under **LLM Extension: Endpoints**
-- Select files from your workspace to provide as context for LLM prompts
-- Switch between multiple LLM endpoints (OpenAI, LMStudio, Ollama, MCP)
-- Store lightweight prompt context between invocations
-- Call multiple LLMs in parallel and synthesize their outputs via a chosen synthesizer
+For example if there is an image subfolder under your extension project workspace:
 
-## Development
+\!\[feature X\]\(images/feature-x.png\)
 
-1. Clone the repo and `cd my-vscode-llm-extension`
-2. Install dependencies:
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-   ```sh
-   npm install
-   ```
+## Requirements
 
-3. Compile the TypeScript:
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-   ```sh
-   npm run compile
-   ```
+## Extension Settings
 
-4. Run the extension (optional):
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-    ```sh
-    code .
-    ```
+For example:
 
-5. Package the extension (optional - requires vsce):
+This extension contributes the following settings:
 
-   ```sh
-   npm run package
-   ```
+* `myExtension.enable`: Enable/disable this extension.
+* `myExtension.thing`: Set to `blah` to do something.
 
-6. **Install the extension**:
+## Known Issues
 
-   - **Via CLI**: If you have the `code` command in your PATH:
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
-     ```sh
-     code --install-extension vscode-llm-extension-0.0.1.vsix
-     ```
+## Release Notes
 
-     If `code` is not available, open VS Code, press ⇧⌘P, run **“Shell Command: Install 'code' command in PATH”**, then restart your terminal.
+Users appreciate release notes as you update your extension.
 
-   - **Via VS Code UI**: Open the Extensions view (⇧⌘X), click the ⋯ menu in the top-right, choose **“Install from VSIX...”**, and select `vscode-llm-extension-0.0.1.vsix`.
+### 1.0.0
 
-## Usage
+Initial release of ...
 
-- **Settings**: Open Preferences → Settings, search “LLM Extension Endpoints”, and add your array of `{ name, url, apiKey }` objects.
-- **Commands**: ⇧⌘P → **LLM: Send Selected Files to LLM**
+### 1.0.1
+
+Fixed issue #.
+
+### 1.1.0
+
+Added features X, Y, and Z.
+
+---
+
+## Following extension guidelines
+
+Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+
+* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+
+## Working with Markdown
+
+You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+
+## For more information
+
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+
+**Enjoy!**
